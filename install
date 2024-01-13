@@ -23,12 +23,12 @@ cp colors-discord.css ~/.config/wal/templates/
 
 if [ "$choice" = "1" ]; then
     betterdiscordctl -install
-    cp ./Themecord.css /home/`$USER`/.config/BetterDiscord/themes/
-    cp ./ThemecordFiller.css.themecord /home/`$USER`/.config/BetterDiscord/themes/
+    cp ./Themecord.css /home/$USER/.config/BetterDiscord/themes/
+    cp ./ThemecordFiller.css.themecord /home/$USER/.config/BetterDiscord/themes/
 else
     sudo vencordinstallercli -install
-    cp ./Themecord.css /home/`$USER`/.config/Vencord/themes/
-    cp ./ThemecordFiller.css.themecord /home/`$USER`/.config/Vencord/themes/
+    cp ./Themecord.css /home/$USER/.config/Vencord/themes/
+    cp ./ThemecordFiller.css.themecord /home/$USER/.config/Vencord/themes/
 fi
 
 
