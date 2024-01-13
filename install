@@ -17,7 +17,7 @@ else
     exit
 fi
 
-yay -S --noconfirm yay $dClient
+yay -S --noconfirm $dClient python-pywal
 
 cp colors-discord.css ~/.config/wal/templates/
 
