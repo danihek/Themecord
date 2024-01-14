@@ -1,10 +1,8 @@
 #!/bin/bash
 
-if [[ "touch /home/$USER/.config/BetterDiscord/themes" == *"cannot"* ]]; then
-    echo "BetterDiscord not detected"
-elif [[ "touch /home/$USER/.config/Vencord/themes" == *"cannot"* ]]; then
+if [[ "touch /home/$USER/.config/Vencord/themes" == *"cannot"* ]]; then
     echo "Vencord not detected"
-    echo "In order to use this script you have to install BetterDiscord or Vencord"
+    echo "In order to use this script you have to install Vencord"
     echo "Exitting..."
     exit
 fi

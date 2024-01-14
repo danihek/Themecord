@@ -1,4 +1,4 @@
-wal -o ~/dotfiles/scripts/discordColors.sh -i ~/wallpaper/
+wal -o ~/.config/themecord/discordColors.sh -i ~/wallpaper/
 
 source ~/.cache/wal/colors.sh
 echo "Selected wallpaper: $wallpaper"
