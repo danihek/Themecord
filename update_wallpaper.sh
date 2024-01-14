@@ -1,28 +1,7 @@
 wal -o ~/dotfiles/scripts/discordColors.sh -i ~/wallpaper/
 
-wallpaperfolder="/home/$USER/wallpaper"
-
-# Check if wallpaper folder exist
-if [ ! -d "$wallpaperfolder" ]; then
-    echo "Error: wallpaper folder doues not exist."
-    exit 1
-fi
-
-wallpapers_t=("$wallpaperfolder"/*.{jpg,jpeg,png,gif})
-
-# Check if folder contains wallpapers
-if [ ${#wallpapers_t[@]} -eq 0 ]; then
-    echo "Error: folder does not contain any wallpaper"
-    exit 1
-fi
-
-# Select random wallpaper
-wallpaper="${wallpapers_t[RANDOM % ${#wallpapers_t[@]}]}"
-
-notifyy="Selected wallpaper: $wallpaper"
-
-# Uncomment if you want to be notified
-#notify-send "$notifyy"
+source ~/.cache/wal/colors.sh
+echo "Selected wallpaper: $wallpaper"
 
 cp $wallpaper ~/.cache/current_wallpaper.jpg
 

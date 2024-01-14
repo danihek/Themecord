@@ -4,8 +4,10 @@ yay -S --noconfirm betterdiscordctl python-pywal
 
 cp colors-discord.css ~/.config/wal/templates/
 
+mkdir -p ~/dotfiles/scripts/
+
 betterdiscordctl install
 cp ./Themecord.css /home/$USER/.config/BetterDiscord/themes/
 cp ./ThemecordFiller.css.themecord /home/$USER/.config/BetterDiscord/themes/
-
-
+cp ./discordColors.sh ~/dotfiles/scripts
+cp ./update_wallpaper.sh ~/dotfiles/scripts
