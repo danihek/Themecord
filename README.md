@@ -14,7 +14,7 @@ cd Themecord
 - swww
 - vencord
 # Usage / Binding
-Installation script created ```~/.config/themecord/scripts`` folder to store ```discordColors.sh``` and ```update_wallpaper.sh```
+Installation script created ```~/.config/themecord/scripts``` folder to store ```discordColors.sh``` and ```update_wallpaper.sh```
 
 If you are using Wayland you can use ```update_wallpaper.sh``` which uses swww - It should work out of the box, but you can write your own similar script and use ```discordColors.sh``` to copy css to directly to discord .css
 I recommend bind it for quick access or write rofi script for better management
