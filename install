@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm betterdiscordctl python-pywal
+yay -S --noconfirm betterdiscordctl python-pywal swww
 
 cp colors-discord.css ~/.config/wal/templates/
 
