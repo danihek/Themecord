@@ -1,7 +1,7 @@
 # Themecord
 Discord theme that will always match your wallpaper!
 
-# Installation
+# Installation (for Arch)
 Copy this repo and execute install script
 
 ```
@@ -9,6 +9,12 @@ git clone https://github.com/danihek/Themecord
 cd Themecord
 ./install
 ```
+# Installation (Manual)
+
+1. Install Vencord
+2. Copy custom ```Themecord.css``` and ```ThemecordFiller.css.themecord``` to your ```~/.config/Vencord/themes/```
+3. Customize ```discordColors.sh``` for your needs
+
 # Dependencies
 - python-pywal
 - swww
