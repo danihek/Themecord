@@ -1,36 +1,11 @@
 #!/bin/bash
 
-echo "Choose your Discord client:"
-echo "1.BetterDiscord"
-echo "2.Vencord"
- 
-read -p ">" choice
-
-dClient=""
-
-if [ "$choice" = "1" ]; then
-    dClient="betterdiscordctl"
-elif [ "$choice" = "2" ]; then
-    dClient="vencordinstallercli"
-else 
-    echo "Error: Wrong input."
-    exit
-fi
-
-yay -S --noconfirm $dClient python-pywal
+yay -S --noconfirm betterdiscordctl python-pywal
 
 cp colors-discord.css ~/.config/wal/templates/
 
-if [ "$choice" = "1" ]; then
-    betterdiscordctl -install
-    cp ./Themecord.css /home/$USER/.config/BetterDiscord/themes/
-    cp ./ThemecordFiller.css.themecord /home/$USER/.config/BetterDiscord/themes/
-else
-    sudo vencordinstallercli -install
-    cp ./Themecord.css /home/$USER/.config/Vencord/themes/
-    cp ./ThemecordFiller.css.themecord /home/$USER/.config/Vencord/themes/
-fi
-
-
+betterdiscordctl install
+cp ./Themecord.css /home/$USER/.config/BetterDiscord/themes/
+cp ./ThemecordFiller.css.themecord /home/$USER/.config/BetterDiscord/themes/
 
 
