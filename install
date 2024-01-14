@@ -4,10 +4,11 @@ yay -S --noconfirm vencord-installer-cli python-pywal swww
 
 cp colors-discord.css ~/.config/wal/templates/
 
-mkdir ~/.config/themecord
+mkdir -p ~/.config/themecord/scripts
+mkdir -p ~/.config/Vencord/themes
 
 sudo vencordinstallercli -install
 cp ./Themecord.css /home/$USER/.config/Vencord/themes/
 cp ./ThemecordFiller.css.themecord /home/$USER/.config/Vencord/themes/
-cp ./discordColors.sh  ~/.config/themecord
-cp ./update_wallpaper.sh ~/.config/themecord
+cp ./discordColors.sh  ~/.config/themecord/scripts
+cp ./update_wallpaper.sh ~/.config/themecord/scripts
