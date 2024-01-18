@@ -19,7 +19,7 @@
 
    	--background-modifier-active: var(--accent-color);
 
-   	--background-modifier-selected: var(--accent-color);
+   	--background-modifier-selected: var(--background-mentioned-hover);
 
    	--background-modifier-accent: transparent;
 
@@ -125,9 +125,16 @@
    	--background-mentioned-hover: var(--scrollbar-auto-thumb);	
 }
 
+
+.form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06 {
+  max-height: 45vh;
+  background-color: var(--background1);
+  border-radius: 22px;
+}
+
 /**
  * @name Themcord
- * @version 1.0.2
+ * @version 1.0.1
  * @description Discord theme compatible with your wallpaper!
  * @author danihek
  * @authorId 518107210803576852
