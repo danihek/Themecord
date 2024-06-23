@@ -14,4 +14,4 @@ echo :root { > $themecordPath
 
 cat $walColorsPath | while IFS= read -r line; do echo -e "\n\t"$line >> $themecordPath; done
 
-cat ~/.config/Vencord/themes/ThemecordFiller.css.themecord >> $themecordPath 
+cat ~/.config/Vencord/themes/ThemecordFiller.css.themecord >> $themecordPath

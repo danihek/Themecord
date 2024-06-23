@@ -5,7 +5,7 @@
     
 	--background-secondary: var(--background-1);
    
-        --background-secondary-alt: var(--background-1);
+	--background-secondary-alt: var(--background-1);
    	
 	--background-accent-gradient: var(--background-1);
    	
@@ -25,9 +25,7 @@
 
    	--background-message-hover: transparent;
        
-        --background-tertiary: var(--background-1);
-
-
+    --background-tertiary: var(--background-1);
    	
    	--text-normal: var(--accent-color);
 
@@ -50,7 +48,6 @@
    	--header-primary: var(--text-normal);
 
    	--header-secondary: var(--text-muted);
-   	
 	
    	--button-background: var(--button-background);
 
@@ -70,7 +67,6 @@
 
    	--button-destructive-active: var(--button-destructive-active);
 
-	
    	--settings-icon-color: var(--settings-icon-color);
 
    	--control-brand-foreground: var(--accent-color);
@@ -86,45 +82,42 @@
    	--brand-experiment: var(--accent-color) !important;
 
 
-       --close-button-color: var(--accent-color);
+    --close-button-color: var(--accent-color);
 
-       --maximize-button-color: var(--accent-color);
+    --maximize-button-color: var(--accent-color);
 
-       --minimize-button-color: var(--accent-color);
+    --minimize-button-color: var(--accent-color);
    
-       --scrollbar-color-alt: 255,0,0;
+    --scrollbar-color-alt: 255,0,0;
 
-       --scrollbar-thin-track: var(--accent-color);
+    --scrollbar-thin-track: var(--accent-color);
 	
-       --scrollbar-auto-thumb: var(--accent-color);
+    --scrollbar-auto-thumb: var(--accent-color);
 
-       --scrollbar-auto-thumb-hover:var(--accent-color);
+    --scrollbar-auto-thumb-hover:var(--accent-color);
 
-       --scrollbar-auto-track: var(--background-mentioned);
+    --scrollbar-auto-track: var(--background-mentioned);
 
-       --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-auto-thumb);
+    --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-auto-thumb);
   	
-       --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
+    --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
 
-       --channeltextarea-background: var(--accent-color);
+    --channeltextarea-background: var(--accent-color);
 
-       --channeltextarea-background-hover: var(--background-tertiary);
+    --channeltextarea-background-hover: var(--background-tertiary);
 	
-       --avatar-roundess: 5px;
+    --avatar-roundess: 5px;
 }
 
 .theme-dark {
 	--background-primary: var(--background-1);
    	--background-primary-alt: var(--background-1);
-   	
 	--background-secondary: var(--background-1);
    	--background-secondary-alt: var(--background-1);
-	
    	--background-floating: var(--background-2);
    	--background-mentioned: var(--accent-color);
    	--background-mentioned-hover: var(--scrollbar-auto-thumb);	
 }
-
 
 .form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06 {
   max-height: 45vh;
@@ -133,8 +126,8 @@
 }
 
 /**
- * @name Themcord
- * @version 1.0.2
+ * @name Themecord
+ * @version 1.0.3
  * @description Discord theme compatible with your wallpaper!
  * @author danihek
  * @authorId 518107210803576852
