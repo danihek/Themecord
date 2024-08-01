@@ -6,10 +6,10 @@
 --background-mentioned-hover: {color3} !important;
 --background-modifier-hover: {color6} !important;
 --background-modifier-active: {color3} !important;
---text-normal: {color5} !important;
---text-positive: {color3} !important;
---text-muted: {color7} !important;
---text-link: {color1} !important;
+--text-normal: {color15} !important;
+--text-positive: {color15} !important;
+--text-muted: {color15} !important;
+--text-link: {color15} !important;
 --button-background: {color5} !important;
 --button-background-hover: {color0} !important;
 --button-background-active: {color0} !important;
