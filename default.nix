@@ -1,3 +1,9 @@
+# default.nix
+
+{ pkgs ? import <nixpkgs> {} }:
+
+themecordFiller = ''
+  
     --background-primary: var(--background-1);
     
     --background-primary-alt: var(--background-1);
@@ -131,3 +137,13 @@
  * @authorId 518107210803576852
  * @source https://github.com/danihek/Themcord
  */
+'';
+
+pkgs.writeScriptBin "copythemecord" ''
+  themecordPath="$HOME/.cache/wal/Themecord.css"
+  vesktopPath="$HOME/.config/vesktop/themes/"
+
+  cp $HOME/.cache/wal/colors-discord.css $themecordPath
+  echo ${themecordFiller} >> $themecordPath
+  mv $themecordPath $vesktopPath
+'';
