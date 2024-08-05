@@ -2,8 +2,8 @@
 
 { pkgs ? import <nixpkgs> {} }:
 
-themecordFiller = ''
-  
+let
+  themecordFiller = ''
     --background-primary: var(--background-1);
     
     --background-primary-alt: var(--background-1);
@@ -111,23 +111,23 @@ themecordFiller = ''
     --channeltextarea-background-hover: var(--background-tertiary);
 	
     --avatar-roundess: 5px;
-}
-
-.theme-dark {
-	   --background-primary: var(--background-1);
-   	--background-primary-alt: var(--background-1);
-   	--background-secondary: var(--background-1);
-   	--background-secondary-alt: var(--background-1);
-   	--background-floating: var(--background-2);
-   	--background-mentioned: var(--accent-color);
-   	--background-mentioned-hover: var(--scrollbar-auto-thumb);	
-}
-
-.form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06 {
-  max-height: 45vh;
-  background-color: var(--background1);
-  border-radius: 22px;
-}
+    }
+    
+    .theme-dark {
+    	   --background-primary: var(--background-1);
+       	--background-primary-alt: var(--background-1);
+       	--background-secondary: var(--background-1);
+       	--background-secondary-alt: var(--background-1);
+       	--background-floating: var(--background-2);
+       	--background-mentioned: var(--accent-color);
+       	--background-mentioned-hover: var(--scrollbar-auto-thumb);	
+    }
+    
+    .form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06 {
+      max-height: 45vh;
+      background-color: var(--background1);
+      border-radius: 22px;
+    }
 
 /**
  * @name Themecord
@@ -137,13 +137,15 @@ themecordFiller = ''
  * @authorId 518107210803576852
  * @source https://github.com/danihek/Themcord
  */
-'';
+  '';
+in
+  pkgs.writeText "ThemecordFiller.css.themecord" themecordFiller;
 
 pkgs.writeScriptBin "copythemecord" ''
   themecordPath="$HOME/.cache/wal/Themecord.css"
   vesktopPath="$HOME/.config/vesktop/themes/"
 
   cp $HOME/.cache/wal/colors-discord.css $themecordPath
-  echo ${themecordFiller} >> $themecordPath
+  echo ${builtins.readFile ./ThemecordFiller.css.themecord} >> $themecordPath
   mv $themecordPath $vesktopPath
-'';
+''
