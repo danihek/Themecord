@@ -129,23 +129,24 @@ let
       border-radius: 22px;
     }
 
-/**
- * @name Themecord
- * @version 1.0.4
- * @description Discord theme compatible with your wallpaper!
- * @author danihek
- * @authorId 518107210803576852
- * @source https://github.com/danihek/Themcord
- */
+    /**
+    * @name Themecord
+    * @version 1.0.4
+    * @description Discord theme compatible with your wallpaper!
+    * @author danihek
+    * @authorId 518107210803576852
+    * @source https://github.com/danihek/Themcord
+    */
   '';
+
+writeThemeFile = pkgs.writeText "ThemecordFiller.css.themecord" themecordFiller;
 in
-  pkgs.writeText "ThemecordFiller.css.themecord" themecordFiller;
-
-pkgs.writeScriptBin "copythemecord" ''
-  themecordPath="$HOME/.cache/wal/Themecord.css"
-  vesktopPath="$HOME/.config/vesktop/themes/"
-
-  cp $HOME/.cache/wal/colors-discord.css $themecordPath
-  echo ${builtins.readFile ./ThemecordFiller.css.themecord} >> $themecordPath
-  mv $themecordPath $vesktopPath
-''
+  pkgs.writeScriptBin "copythemecord" ''
+    themecordPath="$HOME/.cache/wal/Themecord.css"
+    vesktopPath="$HOME/.config/vesktop/themes/"
+  
+    echo :root { > $themecordPath
+    cat $HOME/.cache/wal/colors-discord.css | while IFS= read -r line; do echo -e "\n\t"$line >> $themecordPath; done
+    cat "${writeThemeFile}" >> $themecordPath
+    mv $themecordPath $vesktopPath
+  ''
