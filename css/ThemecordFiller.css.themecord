@@ -26,11 +26,11 @@
      
     --background-tertiary: var(--background-1);
     
-    --text-normal: var(--accent-color);
+    --text-normal: var(--text-norma);
     
-    --text-positive: var(--text-normal);
+    --text-positive: var(--text-positive);
     
-    --text-muted: var(--text-positive);
+    --text-muted: var(--text-muted);
     
     --text-link: var(--text-link);
     
@@ -108,26 +108,26 @@
 }
 
 .theme-dark {
-	   --background-primary: var(--background-1);
-   	--background-primary-alt: var(--background-1);
-   	--background-secondary: var(--background-1);
-   	--background-secondary-alt: var(--background-1);
-   	--background-floating: var(--background-2);
-   	--background-mentioned: var(--accent-color);
-   	--background-mentioned-hover: var(--scrollbar-auto-thumb);	
+	 --background-primary: var(--background-1);
+    --background-primary-alt: var(--background-1);
+    --background-secondary: var(--background-1);
+    --background-secondary-alt: var(--background-1);
+    --background-floating: var(--background-2);
+    --background-mentioned: var(--accent-color);
+    --background-mentioned-hover: var(--scrollbar-auto-thumb);	
 }
 
 .form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06 {
-  max-height: 45vh;
-  background-color: var(--background1);
-  border-radius: 22px;
+    max-height: 45vh;
+    background-color: var(--background1);
+    border-radius: 22px;
 }
 
 /**
  * @name Themecord
- * @version 1.0.4
+ * @version 1.0.5
  * @description Discord theme compatible with your wallpaper!
  * @author danihek
  * @authorId 518107210803576852
- * @source https://github.com/danihek/Themcord
+ * @source https://github.com/danihek/Themecord
  */
