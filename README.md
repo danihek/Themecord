@@ -9,6 +9,34 @@ Discord theme that will always match your wallpaper!
 - Vencord
 - Vesktop
 
+## Installation (NixOS)
+1. Add themecord to inputs(just like home-manager) in your config flake:
+```
+themecord = {
+   url = "github:danihek/themecord";
+   inputs.nixpkgs.follows = "nixpkgs";
+ };
+```
+
+2. Add as a module:
+```
+({ config, pkgs, ... }: {
+  environment.systemPackages = with pkgs; [
+  themecord.packages.x86_64-linux.default
+  ];
+})
+```
+![alt](./assets/nix1.png)
+3. Rebuild your configuration and run copythemecord
+![alt](./assets/nix1.png)
+![alt](./assets/nix2.png)
+![alt](./assets/nix3.png)
+![alt](./assets/nix4.png)
+
+3. Now you can use command ```copythemecord``` right after pywal,
+and your discord client will update it's theme.
+
+
 ## Installation (Manual)
 1. Install supported discord client
 2. Copy ```colors-discord.css``` from ```./css``` folder to your ```~/.config/wal/templates/```
