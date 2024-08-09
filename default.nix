@@ -1,6 +1,4 @@
-# default.nix
-
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs, ... }:
 
 let
   themecordFiller = ''
