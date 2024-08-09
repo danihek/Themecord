@@ -48,4 +48,7 @@ echo :root { > $themecordPath
 
 cat $walColorsPath | while IFS= read -r line; do echo -e "\n\t"$line >> $themecordPath; done
 
-cat ~/.config/$clientType/themes/ThemecordFiller.css.themecord >> $themecordPath
+if [[ -v THEMECORDFILLER ]]; then
+    cat $THEMECORDFILLER >> $themecordPath
+else
+    cat ~/.config/$clientType/themes/ThemecordFiller.css.themecord >> $themecordPath
