@@ -26,16 +26,10 @@ themecord = {
   ];
 })
 ```
-![alt](./assets/nix1.png)
-3. Rebuild your configuration and run copythemecord
-![alt](./assets/nix1.png)
-![alt](./assets/nix2.png)
-![alt](./assets/nix3.png)
-![alt](./assets/nix4.png)
+3. Rebuild your configuration and run ``copythemecord``
 
-3. Now you can use command ```copythemecord``` right after pywal,
+4. Now you can use command ``copythemecord`` right after pywal,
 and your discord client will update it's theme.
-
 
 ## Installation (Manual)
 1. Install supported discord client
