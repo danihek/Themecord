@@ -34,13 +34,14 @@ if [ -z "$clientType" ]; then
     print_client_err
     exit
 fi
+echo "[INFO] Selected Client: $clientType"
 
 walColorsPath="/home/$USER/.cache/wal/colors-discord.css"
-
 if [ ! -f "$walColorsPath" ]; then
     print_dc_err
     exit
 fi
+echo "[INFO] colors-discord.css path: $walColorsPath"
 
 themecordPath="/home/$USER/.config/$clientType/themes/Themecord.css"
 
@@ -48,7 +49,8 @@ echo :root { > $themecordPath
 
 cat $walColorsPath | while IFS= read -r line; do echo -e "\n\t"$line >> $themecordPath; done
 
-if [[ -v THEMECORDFILLER ]]; then
-    cat $THEMECORDFILLER >> $themecordPath
+if [[ -v themecordFiller ]]; then
+    echo $themecordFiller >> $themecordPath
 else
     cat ~/.config/$clientType/themes/ThemecordFiller.css.themecord >> $themecordPath
+fi

@@ -29,7 +29,7 @@ themecord = {
 (Example from my config)
 ![alt text](https://github.com/danihek/Themecord/blob/main/assets/nix5.png)
  
-3. Rebuild your configuration and run ``copythemecord``
+3. Rebuild your configuration and run ``themecord``
 
 5. Go to discord client and turn on Themecord
    ![alt text](https://github.com/danihek/Themecord/blob/main/assets/nix3.png)
@@ -37,7 +37,7 @@ themecord = {
 6. If you used pywal before, then theme should work out of the box
    ![alt text](https://github.com/danihek/Themecord/blob/main/assets/nix4.png)
 
-4. Now you can use command ``copythemecord`` right after pywal,
+4. Now you can use command ``themecord`` right after pywal,
 and your discord client will update it's theme.
 
 ## Installation (Manual)

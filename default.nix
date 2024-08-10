@@ -2,12 +2,13 @@
 
 let
   themecordFiller = (builtins.readFile ./css/ThemecordFiller.css.themecord);
-  discordColorsContent = (builtins.readFile ./scripts/discordColors.sh);
-
-  writeThemeFile = pkgs.writeText "ThemecordFiller.css.themecord" themecordFiller;
-
-  environment.sessionVariables = rec {
-    THEMECORDFILLER = "${themecordFiller}";
-  };
+  discordColorsContent = (builtins.readFile ./scripts/themecord.sh);
 in
-  pkgs.writeScriptBin "copythemecord" discordColorsContent
+  pkgs.writeScriptBin "themecord" ''
+    #!/usr/bin/env bash
+    themecordFiller=$(cat << 'EOF'
+    ${themecordFiller}
+    EOF
+    )
+    # ${discordColorsContent}
+    ''
