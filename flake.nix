@@ -22,7 +22,46 @@
       in pkgs.callPackage ./default.nix {};
     };
 
-    defaultPackage.x86_64-linux = self.packages.x86_64-linux;
-    defaultPackage.aarch64-linux = self.packages.aarch64-linux;
+    defaultPackage = {
+      x86_64-linux = self.packages.x86_64-linux;
+      aarch64-linux = self.packages.aarch64-linux;
+    };
+
+    nixosConfigurations = {
+      default = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        configuration = {
+          environment.systemPackages = with self.packages.x86_64-linux; [
+            default
+          ];
+        };
+      };
+    };
   };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
