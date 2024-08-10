@@ -4,37 +4,41 @@
 
 confPath="/home/$USER/.config"
 
-clientType=""
 supportedClients=("Vencord" "vesktop")
+availableClients=()
 
 function print_client_err() {
-    echo "No compatible clients detected!"
+    echo "[ERROR] No compatible clients detected!"
 echo "In order to use this script you have to use compatible discord clients! Check out github page for more info https://github.com/danihek/Themecord"
     echo "Exitting..."
 }
 
 function print_dc_err() {
-    echo "Cannot find discord-colors.css in wal cache folder."
+    echo "[ERROR] Cannot find discord-colors.css in wal cache folder."
+    echo "Exitting..."
+}
+
+function print_filler_err() {
+    echo "[ERROR] Cannot access themecordFiller.css content."
     echo "Exitting..."
 }
 
 for client in "${supportedClients[@]}"; do
     dc_path=~/.config/$client
     if test -d $(realpath "$dc_path"); then
-        clientType="$client"
         echo "[SUCCESS] $client DETECTED (path: $dc_path)"
-        break
+        availableClients+=("$client")
+        continue
     else
         echo "[FAILURE] $client not DETECTED (path: $dc_path)"
         continue
     fi
 done
 
-if [ -z "$clientType" ]; then
+if [ -z "$availableClients" ]; then
     print_client_err
     exit
 fi
-echo "[INFO] Selected Client: $clientType"
 
 walColorsPath="/home/$USER/.cache/wal/colors-discord.css"
 if [ ! -f "$walColorsPath" ]; then
@@ -43,14 +47,19 @@ if [ ! -f "$walColorsPath" ]; then
 fi
 echo "[INFO] colors-discord.css path: $walColorsPath"
 
-themecordPath="/home/$USER/.config/$clientType/themes/Themecord.css"
-
-echo :root { > $themecordPath
-
-cat $walColorsPath | while IFS= read -r line; do echo -e "\n\t"$line >> $themecordPath; done
-
-if [[ -v themecordFiller ]]; then
-    echo $themecordFiller >> $themecordPath
-else
-    cat ~/.config/$clientType/themes/ThemecordFiller.css.themecord >> $themecordPath
-fi
+for client in "${availableClients[@]}"; do
+    themecordPath="/home/$USER/.config/$client/themes/Themecord.css"
+    echo :root { > $themecordPath
+    cat $walColorsPath | while IFS= read -r line; do echo -e "\n\t"$line >> $themecordPath; done
+    if [[ -v themecordFiller ]]; then
+        echo $themecordFiller >> $themecordPath
+    else
+        themecordFillerPath="~/.config/$client/themes/ThemecordFiller.css.themecord"
+        if test -f "$(realpath "$themecordFillerPath")"; then
+            cat ~/.config/$client/themes/ThemecordFiller.css.themecord >> $themecordPath
+        else
+            print_filler_err
+            exit
+        fi
+    fi
+done
