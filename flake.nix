@@ -22,8 +22,6 @@
       in pkgs.callPackage ./default.nix {};
     };
 
-    packages.${system}.default = (import ./default.nix { inherit pkgs; });
-
     defaultPackage.x86_64-linux = self.packages.x86_64-linux;
     defaultPackage.aarch64-linux = self.packages.aarch64-linux;
   };
