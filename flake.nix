@@ -1,67 +1,20 @@
 # flake.nix
 
+# flake.nix
 {
-  description = "Themecord NixOS flake";
+  description = "Themecord flake.nix";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-  };
-
-  outputs = { self, nixpkgs }: {
-    packages = {
-      x86_64-linux = let
-        pkgs = import nixpkgs {
-          system = "x86_64-linux";
-        };
-      in pkgs.callPackage ./default.nix {};
-
-      aarch64-linux = let
-        pkgs = import nixpkgs {
-          system = "aarch64-linux";
-        };
-      in pkgs.callPackage ./default.nix {};
+  inputs =
+    {
+      nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     };
 
-    defaultPackage = {
-      x86_64-linux = self.packages.x86_64-linux;
-      aarch64-linux = self.packages.aarch64-linux;
-    };
-
-    nixosConfigurations = {
-      default = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        configuration = {
-          environment.systemPackages = with self.packages.x86_64-linux; [
-            default
-          ];
-        };
-      };
-    };
+  outputs = { self, nixpkgs }:
+  let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in
+  {
+    packages.${system}.default = (import ./default.nix { inherit pkgs; });
   };
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
