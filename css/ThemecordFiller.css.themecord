@@ -29,58 +29,58 @@
     --text-normal: var(--color15);
     --text-positive: var(--color15);
     --text-muted: var(--color15);
-    --text-link: var(--color10);
+    --text-link: var(--color0);
 
-    --interactive-selected: var(--color13);
-    --interactive-active: var(--color14);
-    --interactive-normal: var(--color13);
-    --interactive-muted: var(--color10);
+    --interactive-selected: var(--color15);
+    --interactive-active: var(--color15);
+    --interactive-normal: var(--color15);
+    --interactive-muted: var(--color15);
     
     --header-primary: var(--color15);
-    --header-secondary: var(--color14);
-    --channels-default: var(--color12);
+    --header-secondary: var(--color15);
+    --channels-default: var(--color15);
     --channeltextarea-background: var(--color14);
 }
 
 .theme-light {
-    --background-primary: var(--color0);
-    --background-primary-alt: var(--color1);
+    --background-primary: var(--color13);
+    --background-primary-alt: var(--color12);
 
-    --background-secondary: var(--color2);
-    --background-secondary-alt: var(--color3);
+    --background-secondary: var(--color14);
+    --background-secondary-alt: var(--color13);
 
-    --background-floating: var(--color4);
-    --background-accent-gradient: var(--color1);
-    --background-tertiary: var(--color5);
+    --background-floating: var(--color10);
+    --background-accent-gradient: var(--color6);
+    --background-tertiary: var(--color4);
 
-    --background-mentioned: var(--color6);
-    --background-mentioned-hover: var(--color7);
-    --background-modifier-hover: var(--color7);
-    --background-modifier-active: var(--color8);
-    --background-modifier-selected: var(--color9);
-    --background-modifier-accent: var(--color7);
+    --background-mentioned: var(--color10);
+    --background-mentioned-hover: var(--color10);
+    --background-modifier-hover: var(--color15);
+    --background-modifier-active: var(--color14);
+    --background-modifier-selected: var(--color13);
+    --background-modifier-accent: var(--color9);
 
     --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: var(--color6);
-    --scrollbar-auto-thumb-hover: var(--color1);
-    --scrollbar-auto-track: var(--color4);
-    --scrollbar-auto-scrollbar-color-thumb: var(--color4);
-    --scrollbar-auto-scrollbar-color-track: var(--color6);
+    --scrollbar-auto-thumb: var(--color13);
+    --scrollbar-auto-thumb-hover: var(--color7);
+    --scrollbar-auto-track: var(--color13);
+    --scrollbar-auto-scrollbar-color-thumb: var(--color10);
+    --scrollbar-auto-scrollbar-color-track: var(--color8);
 
-    --text-normal: var(--color10);
-    --text-positive: var(--color10);
-    --text-muted: var(--color10);
-    --text-link: var(--color5);
+    --text-normal: var(--color1);
+    --text-positive: var(--color0);
+    --text-muted: var(--color1);
+    --text-link: var(--color0);
 
-    --interactive-selected: var(--color8);
-    --interactive-active: var(--color9);
-    --interactive-normal: var(--color8);
-    --interactive-muted: var(--color5);
+    --interactive-selected: var(--color10);
+    --interactive-active: var(--color10);
+    --interactive-normal: var(--color10);
+    --interactive-muted: var(--color10);
     
     --header-primary: var(--color10);
-    --header-secondary: var(--color9);
-    --channels-default: var(--color7);
-    --channeltextarea-background: var(--color9);
+    --header-secondary: var(--color10);
+    --channels-default: var(--color10);
+    --channeltextarea-background: var(--color14);
 }
 
 /*
