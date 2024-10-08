@@ -1,133 +1,93 @@
-    --background-primary: var(--background-1);
-    
-    --background-primary-alt: var(--background-1);
-    
-    --background-secondary: var(--background-1);
-    
-    --background-secondary-alt: var(--background-1);
-    	
-    --background-accent-gradient: var(--background-1);
-    
-    --background-floating: var(--background-2);
-    
-    --background-mentioned: var(--background-mentioned);
-    
-    --background-mentioned-hover: var(--background-mentioned-hover);
-    
-    --background-modifier-hover: var(--background-modifier-hover);
-    
-    --background-modifier-active: var(--accent-color);
-    
-    --background-modifier-selected: var(--background-mentioned-hover);
-    
-    --background-modifier-accent: transparent;
-    
-    --background-message-hover: transparent;
-     
-    --background-tertiary: var(--background-1);
-    
-    --text-normal: var(--text-norma);
-    
-    --text-positive: var(--text-positive);
-    
-    --text-muted: var(--text-muted);
-    
-    --text-link: var(--text-link);
-    
-    --interactive-selected: var(--background-primary);
-    
-    --interactive-active: var(--text-normal);
-    
-    --interactive-normal: var(--text-normal);
-    
-    --interactive-muted: var(--button-background-active);
-    
-    --channels-default: var(--text-muted);
-    
-    --header-primary: var(--text-normal);
-    
-    --header-secondary: var(--text-muted);
-    
-    --button-background: var(--button-background);
-    
-    --button-background-hover: var(--button-background-hover);
-    
-    --button-background-active: var(--button-accent-active);
-    
-    --button-accent: var(--accent-color);
-    
-    --button-accent-hover: var(--button-accent-hover);
-    
-    --button-accent-active: var(--button-accent-active);
-    
-    --button-destructive: var(--button-destructive);
-    
-    --button-destructive-hover: var(--button-destructive-hover);
-    
-    --button-destructive-active: var(--button-destructive-active);
-    
-    --settings-icon-color: var(--settings-icon-color);
-    
-    --control-brand-foreground: var(--accent-color);
-    
-    --info-warning-foreground: var(--accent-color);
-    
-    --tab-selected: var(--tab-selected);
-    
-    --switch: var(--switch);
-    
-    --activity-card-background: var(--background-1);
-    
-    --brand-experiment: var(--accent-color) !important;
 
-    --close-button-color: var(--accent-color);
-
-    --maximize-button-color: var(--accent-color);
-
-    --minimize-button-color: var(--accent-color);
-   
-    --scrollbar-color-alt: 255,0,0;
-
-    --scrollbar-thin-track: var(--accent-color);
-	
-    --scrollbar-auto-thumb: var(--accent-color);
-
-    --scrollbar-auto-thumb-hover:var(--accent-color);
-
-    --scrollbar-auto-track: var(--background-mentioned);
-
-    --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-auto-thumb);
-  	
-    --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
-
-    --channeltextarea-background: var(--accent-color);
-
-    --channeltextarea-background-hover: var(--background-tertiary);
-	
-    --avatar-roundess: 5px;
 }
 
 .theme-dark {
-	 --background-primary: var(--background-1);
-    --background-primary-alt: var(--background-1);
-    --background-secondary: var(--background-1);
-    --background-secondary-alt: var(--background-1);
-    --background-floating: var(--background-2);
-    --background-mentioned: var(--accent-color);
-    --background-mentioned-hover: var(--scrollbar-auto-thumb);	
+    --background-primary: var(--color2);
+    --background-primary-alt: var(--color3);
+
+    --background-secondary: var(--color1);
+    --background-secondary-alt: var(--color2);
+
+    --background-floating: var(--color5);
+    --background-accent-gradient: var(--color2);
+    --background-tertiary: var(--color0);
+
+    --background-mentioned: var(--color12);
+    --background-mentioned-hover: var(--color3);
+    --background-modifier-hover: var(--color3);
+    --background-modifier-active: var(--color12);
+    --background-modifier-selected: var(--color13);
+    --background-modifier-accent: var(--color3); 
+    
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--color0);
+    --scrollbar-auto-thumb-hover: var(--color2);
+    --scrollbar-auto-track: var(--color5);
+    --scrollbar-auto-scrollbar-color-thumb: var(--color5);
+    --scrollbar-auto-scrollbar-color-track: var(--color12);
+
+    --text-normal: var(--color15);
+    --text-positive: var(--color15);
+    --text-muted: var(--color15);
+    --text-link: var(--color10);
+
+    --interactive-selected: var(--color13);
+    --interactive-active: var(--color14);
+    --interactive-normal: var(--color13);
+    --interactive-muted: var(--color10);
+    
+    --header-primary: var(--color15);
+    --header-secondary: var(--color14);
+    --channels-default: var(--color12);
+    --channeltextarea-background: var(--color14);
 }
 
-.form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06 {
-    max-height: 45vh;
-    background-color: var(--background1);
-    border-radius: 22px;
+.theme-light {
+    --background-primary: var(--color0);
+    --background-primary-alt: var(--color1);
+
+    --background-secondary: var(--color2);
+    --background-secondary-alt: var(--color3);
+
+    --background-floating: var(--color4);
+    --background-accent-gradient: var(--color1);
+    --background-tertiary: var(--color5);
+
+    --background-mentioned: var(--color6);
+    --background-mentioned-hover: var(--color7);
+    --background-modifier-hover: var(--color7);
+    --background-modifier-active: var(--color8);
+    --background-modifier-selected: var(--color9);
+    --background-modifier-accent: var(--color7);
+
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--color6);
+    --scrollbar-auto-thumb-hover: var(--color1);
+    --scrollbar-auto-track: var(--color4);
+    --scrollbar-auto-scrollbar-color-thumb: var(--color4);
+    --scrollbar-auto-scrollbar-color-track: var(--color6);
+
+    --text-normal: var(--color10);
+    --text-positive: var(--color10);
+    --text-muted: var(--color10);
+    --text-link: var(--color5);
+
+    --interactive-selected: var(--color8);
+    --interactive-active: var(--color9);
+    --interactive-normal: var(--color8);
+    --interactive-muted: var(--color5);
+    
+    --header-primary: var(--color10);
+    --header-secondary: var(--color9);
+    --channels-default: var(--color7);
+    --channeltextarea-background: var(--color9);
 }
 
-/**
+/*
  * @name Themecord
- * @version 1.0.5
+ * @version 1.0.6
  * @description Discord theme compatible with your wallpaper!
  * @author danihek
  * @authorId 518107210803576852
  * @source https://github.com/danihek/Themecord
- */
+*/

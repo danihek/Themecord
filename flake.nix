@@ -1,6 +1,4 @@
 # flake.nix
-
-# flake.nix
 {
   description = "Themecord flake.nix";
 

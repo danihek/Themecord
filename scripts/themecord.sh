@@ -51,12 +51,13 @@ for client in "${availableClients[@]}"; do
     themecordPath="/home/$USER/.config/$client/themes/Themecord.css"
     echo :root { > $themecordPath
     cat $walColorsPath | while IFS= read -r line; do echo -e "\n\t"$line >> $themecordPath; done
-    if [[ -v themecordFiller ]]; then
-        echo $themecordFiller >> $themecordPath
+
+    if [[ -v themecordFiller ]]; then # This is for script that nix combines
+        printf '%s\n' "$themecordFiller" >> $themecordPath
     else
         themecordFillerPath="~/.config/$client/themes/ThemecordFiller.css.themecord"
         if test -f "$(realpath "$themecordFillerPath")"; then
-            cat ~/.config/$client/themes/ThemecordFiller.css.themecord >> $themecordPath
+            cat $themecordFillerPath >> $themecordPath
         else
             print_filler_err
             exit
