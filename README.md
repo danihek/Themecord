@@ -1,7 +1,13 @@
 # Themecord
 Discord theme that will always match your wallpaper!
 
-<img src="https://github.com/danihek/Themecord/blob/main/assets/swappy-20240810_031551.png" alt="drawing" style="width:1200px;"/>
+<img src="https://github.com/danihek/Themecord/blob/main/assets/preview.gif" alt="drawing" style="width:1200px;"/>
+
+## Why?
+Because why not, I like pywal and I thought it's cool.
+
+## What does it really change?
+Like in title, overall discord theme, but Themecord also contains little animations on cursor hover
 
 ## Dependecies
 - python-pywal
@@ -10,6 +16,9 @@ Discord theme that will always match your wallpaper!
 ## Supported Clients:
 - Vencord
 - Vesktop
+
+## Pywal
+Before you even start doing anything, remember to put ``./css/colors-discord.css`` to ``~/.config/wal/templates/`` folder
 
 ## Installation (NixOS)
 1. Add themecord to inputs(just like home-manager) in your config flake:
