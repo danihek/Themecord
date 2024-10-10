@@ -72,15 +72,53 @@
     --text-muted: var(--color1);
     --text-link: var(--color0);
 
-    --interactive-selected: var(--color10);
-    --interactive-active: var(--color10);
-    --interactive-normal: var(--color10);
-    --interactive-muted: var(--color10);
+    --interactive-selected: var(--color1);
+    --interactive-active: var(--color1);
+    --interactive-normal: var(--color1);
+    --interactive-muted: var(--color1);
     
     --header-primary: var(--color10);
     --header-secondary: var(--color10);
     --channels-default: var(--color10);
     --channeltextarea-background: var(--color14);
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.05) translateZ(-1px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+button:hover,
+button:focus,
+a:hover,
+a:focus,
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus,
+[role="button"]:hover,
+[role="button"]:focus,
+[role="link"]:hover,
+[role="link"]:focus,
+.button-38aScr:hover,
+.button-38aScr:focus,
+.form_a7d72e:hover,
+.form_a7d72e:focus,
+[class*="clickable"]:hover,
+[class*="clickable"]:focus,
+[class*="wrapper"]:hover,
+[class*="wrapper"]:focus {
+    animation: popup 0.3s ease-in-out;
+    border-radius: 20px;
 }
 
 /*
