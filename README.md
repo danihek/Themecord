@@ -62,15 +62,11 @@ and your discord client will update it's theme.
 In folder ```./example``` you see example script which you can use as your template in your own script/config and edit to your needs. Enjoy theme'in!!
 
 # Showcase
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/swappy-20240810_031322.png)
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/swappy-20240810_031551.png)
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/swappy-20240810_031610.png)
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/swappy-20240810_031628.png)
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/swappy-20240810_031657.png)
-
-#
-
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/2024-01-14-022114_hyprshot.png)
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/2024-01-14-022423_hyprshot.png)
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/2024-01-14-022241_hyprshot.png)
-![alt text](https://github.com/danihek/Themecord/blob/main/assets/2024-01-14-022145_hyprshot.png)
+![alt text](swappy-20240924_214828.png)
+![alt text](swappy-20241011_013305.png)
+![alt text](swappy-20241011_013320.png)
+![alt text](swappy-20241011_013405.png)
+![alt text](swappy-20241011_013421.png)
+![alt text](swappy-20241011_013439.png)
+![alt text](swappy-20241011_013456.png)
+![alt text](swappy-20241011_013514.png)
