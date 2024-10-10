@@ -19,7 +19,7 @@ function print_dc_err() {
 }
 
 function print_filler_err() {
-    echo "[ERROR] Cannot access themecordFiller.css content."
+    echo "[ERROR] Cannot access ThemecordFiller.css.themecord content."
     echo "Exitting..."
 }
 
@@ -55,12 +55,11 @@ for client in "${availableClients[@]}"; do
     if [[ -v themecordFiller ]]; then # This is for script that nix combines
         printf '%s\n' "$themecordFiller" >> $themecordPath
     else
-        themecordFillerPath="~/.config/$client/themes/ThemecordFiller.css.themecord"
-        if test -f "$(realpath "$themecordFillerPath")"; then
+        themecordFillerPath=~/.config/$client/themes/ThemecordFiller.css.themecord
+        if test -f $themecordFillerPath; then
             cat $themecordFillerPath >> $themecordPath
         else
             print_filler_err
-            exit
         fi
     fi
 done
