@@ -62,11 +62,11 @@ and your discord client will update it's theme.
 In folder ```./example``` you see example script which you can use as your template in your own script/config and edit to your needs. Enjoy theme'in!!
 
 # Showcase
-![alt text](swappy-20240924_214828.png)
-![alt text](swappy-20241011_013305.png)
-![alt text](swappy-20241011_013320.png)
-![alt text](swappy-20241011_013405.png)
-![alt text](swappy-20241011_013421.png)
-![alt text](swappy-20241011_013439.png)
-![alt text](swappy-20241011_013456.png)
-![alt text](swappy-20241011_013514.png)
+![alt text](./assets/swappy-20240924_214828.png)
+![alt text](./assets/swappy-20241011_013305.png)
+![alt text](./assets/swappy-20241011_013320.png)
+![alt text](./assets/swappy-20241011_013405.png)
+![alt text](./assets/swappy-20241011_013421.png)
+![alt text](./assets/swappy-20241011_013439.png)
+![alt text](./assets/swappy-20241011_013456.png)
+![alt text](./assets/swappy-20241011_013514.png)
