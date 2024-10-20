@@ -20,6 +20,13 @@ Like in title, overall discord theme, but Themecord also contains little animati
 ## Pywal
 Before you even start doing anything, remember to put ``./css/colors-discord.css`` to ``~/.config/wal/templates/`` folder
 
+## Installation (Manual)
+1. Install supported discord client
+2. Copy ```colors-discord.css``` from ```./css``` folder to your ```~/.config/wal/templates/```
+3. Copy ```Themecord.css``` and ```ThemecordFiller.css.themecord``` from ```./css``` folder to your ```~/.config/DISCORDCLIENT/themes/```
+4. In your discord client, go to themes and select Themecord from available themes.
+5. Now when will you change your wallpaper using pywal, run ```./scripts/themecord.sh``` and your discord theme will be applied.
+
 ## Installation (NixOS)
 1. Add themecord to inputs(just like home-manager) in your config flake:
 ```
@@ -50,13 +57,6 @@ themecord = {
 
 4. Now you can use command ``themecord`` right after pywal,
 and your discord client will update it's theme.
-
-## Installation (Manual)
-1. Install supported discord client
-2. Copy ```colors-discord.css``` from ```./css``` folder to your ```~/.config/wal/templates/```
-3. Copy ```Themecord.css``` and ```ThemecordFiller.css.themecord``` from ```./css``` folder to your ```~/.config/DISCORDCLIENT/themes/```
-4. In your discord client, go to themes and select Themecord from available themes.
-5. Now when will you change your wallpaper using pywal, run ```./scripts/themecord.sh``` and your discord theme will be applied.
 
 ## Example usage
 In folder ```./example``` you see example script which you can use as your template in your own script/config and edit to your needs. Enjoy theme'in!!
