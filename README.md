@@ -10,22 +10,37 @@ Because why not, I like pywal and I thought it's cool.
 Like in title, overall discord theme, but Themecord also contains little animations on cursor hover
 
 ## Dependecies
-- python-pywal
 - Compatible discord client
+- python-pywal or wallust
 
 ## Supported Clients:
 - Vencord
 - Vesktop
 
-## Pywal
-Before you even start doing anything, remember to put ``./css/colors-discord.css`` to ``~/.config/wal/templates/`` folder
+## Generating colorscheme
+Before you even start doing **ANYTHING**, you have to choose if you wanna use pywal or wallust
+
+### In case of pywal you have to copy css file:
+``./css/pywal/colors-discord.css`` to ``~/.config/wal/templates/`` folder
+
+### and in case of wallust:
+``./css/wallust/colors-discord.css`` to ``~/.config/wallust/templates/`` folder
+
+also add to ``~/.config/wallust/wallust.toml`` required config:
+
+```
+[templates]
+themecord.template = "colors-discord.css"
+themecord.target = '~/.cache/wallust/colors-discord.css'
+```
 
 ## Installation (Manual)
+
 1. Install supported discord client
-2. Copy ```colors-discord.css``` from ```./css``` folder to your ```~/.config/wal/templates/```
-3. Copy ```Themecord.css``` and ```ThemecordFiller.css.themecord``` from ```./css``` folder to your ```~/.config/DISCORDCLIENT/themes/```
+2. Look into **# Generating colorscheme** Section
+3. Copy ``Themecord.css`` and ``ThemecordFiller.css.themecord`` from ``./css`` folder to your ``~/.config/DISCORDCLIENT/themes/``
 4. In your discord client, go to themes and select Themecord from available themes.
-5. Now when will you change your wallpaper using pywal, run ```./scripts/themecord.sh``` and your discord theme will be applied.
+5. Now when change your wallpaper using pywal, run ``./scripts/themecord.sh`` and your discord theme will be applied.
 
 ## Installation (NixOS)
 1. Add themecord to inputs(just like home-manager) in your config flake:
@@ -59,7 +74,7 @@ themecord = {
 and your discord client will update it's theme.
 
 ## Example usage
-In folder ```./example``` you see example script which you can use as your template in your own script/config and edit to your needs. Enjoy theme'in!!
+In folder ``./example`` you see example script which you can use as your template in your own script/config and edit to your needs. Enjoy theme'in!!
 
 # Showcase
 ![alt text](./assets/swappy-20241011_013305.png)

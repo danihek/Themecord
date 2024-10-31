@@ -1,0 +1,3 @@
+[templates]
+themecord.template = "colors-discord.css"
+themecord.target = '~/.cache/wallust/colors-discord.css'
