@@ -1,4 +1,3 @@
-# flake.nix
 {
   description = "Themecord flake.nix";
 
@@ -13,12 +12,13 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in
   {
-      packages.${system}.default = (import ./default.nix {
-          inherit pkgs;
-          extraPackages = [
-              pkgs.wallust
-              pkgs.python3Packages.pywal
-          ];
-      });
+    packages.${system}.default = (import ./default.nix {
+      inherit pkgs;
+      extraPackages = [
+        pkgs.wallust
+        pkgs.python3Packages.pywal
+      ];
+    });
   };
 }
+
