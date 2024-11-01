@@ -73,6 +73,9 @@ themecord = {
 4. Now you can use command ``themecord`` right after pywal,
 and your discord client will update it's theme.
 
+## Nix
+In folder ``./nix`` you can see example how I added to my flake wallust and pywal.
+
 ## Example usage
 In folder ``./example`` you see example script which you can use as your template in your own script/config and edit to your needs. Enjoy theme'in!!
 
