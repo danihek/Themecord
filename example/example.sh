@@ -6,7 +6,7 @@ wallpaper=./test-wallpaper.jpg
 # Use pywal
 wal -i $wallpaper
 
-# Use pywal
+# Use wallust
 wallust run $wallpaper
 
 # Generate Themecord.css from new color palette (pywal)
