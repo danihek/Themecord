@@ -7,7 +7,7 @@ Discord theme that will always match your wallpaper!
 Because why not, I like pywal and I thought it's cool.
 
 ## What does it really change?
-Like in title, overall discord theme, but Themecord also contains little animations on cursor hover
+Like in title, overall discord theme, but Themecord also contains little animations on cursor hover on specific objects, list etc.
 
 ## Dependecies
 - Compatible discord client
