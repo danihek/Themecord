@@ -40,7 +40,13 @@ themecord.template = "discord-colors.css"
 themecord.target = '~/.cache/wallust/discord-colors.css'
 ```
 
-## Installation (Manual)
+## Installation
+
+### AUR
+``yay -S themecord``
+
+
+### Manual
 
 1. Install supported discord client
 2. Download themecord from [release](https://github.com/danihek/Themecord/releases) page
@@ -50,7 +56,8 @@ themecord.target = '~/.cache/wallust/discord-colors.css'
 
 You can put it in ``/usr/local/bin/`` for ease of use
 
-## Installation (NixOS)
+
+### NixOS
 1. Add themecord to inputs(just like home-manager) in your config flake:
 ```
 themecord = {
