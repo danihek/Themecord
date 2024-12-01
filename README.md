@@ -1,7 +1,7 @@
 # Themecord
 Discord theme that will always match your wallpaper!
 
-<img src="https://github.com/danihek/Themecord/blob/main/assets/preview.gif" alt="drawing" style="width:1200px;"/>
+<img src="https://raw.githubusercontent.com/danihek/Themecord/refs/heads/main/assets/preview.gif" alt="drawing" style="width:1200px;"/>
 
 ## Why?
 Because why not, I like having same theme on everything I thought it's cool.
