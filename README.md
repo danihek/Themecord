@@ -43,7 +43,7 @@ themecord.target = '~/.cache/wallust/discord-colors.css'
 ## Installation (Manual)
 
 1. Install supported discord client
-2. Download [themecord](https://github.com/danihek/Themecord/releases/download/v1.0.9/themecord) from [release](https://github.com/danihek/Themecord/releases) page
+2. Download themecord from [release](https://github.com/danihek/Themecord/releases) page
 3. Look into **# Generating colorscheme** Section
 4. In your discord client, go to themes and select Themecord from available themes.
 5. Now after you run hellwal, pywal or wallust  run ``./themecord`` and your discord theme will be applied.
