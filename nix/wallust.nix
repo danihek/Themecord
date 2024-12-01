@@ -5,11 +5,11 @@
 
   home.file.".config/wallust/wallust.toml".text = ''
       [templates]
-      themecord.template = "colors-discord.css"
-      themecord.target = '~/.cache/wallust/colors-discord.css'
+      themecord.template = "discord-colors.css"
+      themecord.target = '~/.cache/wallust/discord-colors.css'
   '';
 
-  home.file.".config/wallust/templates/colors-discord.css" .text = ''
+  home.file.".config/wallust/templates/discord-colors.css" .text = ''
     --color0:  {{ color0 }};
     --color1:  {{ color1 }};
     --color2:  {{ color2 }};

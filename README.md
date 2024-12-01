@@ -4,14 +4,17 @@ Discord theme that will always match your wallpaper!
 <img src="https://github.com/danihek/Themecord/blob/main/assets/preview.gif" alt="drawing" style="width:1200px;"/>
 
 ## Why?
-Because why not, I like pywal and I thought it's cool.
+Because why not, I like having same theme on everything I thought it's cool.
 
 ## What does it really change?
 Like in title, overall discord theme, but Themecord also contains little animations on cursor hover on specific objects, list etc.
 
 ## Dependecies
 - Compatible discord client
-- python-pywal or wallust
+- One of color palettes generators:
+    - [hellwal](https://github.com/danihek/hellwal)
+    - [python-pywal](https://github.com/dylanaraps/pywal)
+    - [wallust](https://codeberg.org/onemoresuza/wallust)
 
 ## Supported Clients:
 - Vencord
@@ -20,27 +23,32 @@ Like in title, overall discord theme, but Themecord also contains little animati
 ## Generating colorscheme
 Before you even start doing **ANYTHING**, you have to choose if you wanna use pywal or wallust
 
-### In case of pywal you have to copy css file:
-``./css/pywal/colors-discord.css`` to ``~/.config/wal/templates/`` folder
+### In case of hellwal you have to copy css file:
+``./css/hellwal/discord-colors.css`` to ``~/.config/hellwal/templates/`` folder
+
+### in case of pywal:
+``./css/pywal/discord-colors.css`` to ``~/.config/wal/templates/`` folder
 
 ### and in case of wallust:
-``./css/wallust/colors-discord.css`` to ``~/.config/wallust/templates/`` folder
+``./css/wallust/discord-colors.css`` to ``~/.config/wallust/templates/`` folder
 
 also add to ``~/.config/wallust/wallust.toml`` required config:
 
 ```
 [templates]
-themecord.template = "colors-discord.css"
-themecord.target = '~/.cache/wallust/colors-discord.css'
+themecord.template = "discord-colors.css"
+themecord.target = '~/.cache/wallust/discord-colors.css'
 ```
 
 ## Installation (Manual)
 
 1. Install supported discord client
-2. Look into **# Generating colorscheme** Section
-3. Copy ``Themecord.css`` and ``ThemecordFiller.css.themecord`` from ``./css`` folder to your ``~/.config/DISCORDCLIENT/themes/``
+2. Download [themecord](https://github.com/danihek/Themecord/releases/download/v1.0.9/themecord) from [release](https://github.com/danihek/Themecord/releases) page
+3. Look into **# Generating colorscheme** Section
 4. In your discord client, go to themes and select Themecord from available themes.
-5. Now when change your wallpaper using pywal, run ``./scripts/themecord.sh`` and your discord theme will be applied.
+5. Now after you run hellwal, pywal or wallust  run ``./themecord`` and your discord theme will be applied.
+
+You can put it in ``/usr/local/bin/`` for ease of use
 
 ## Installation (NixOS)
 1. Add themecord to inputs(just like home-manager) in your config flake:
@@ -64,22 +72,21 @@ themecord = {
  
 3. Rebuild your configuration and run ``themecord``
 
-5. Go to discord client and turn on Themecord
+4. Go to discord client and select Themecord from available themes
    ![alt text](https://github.com/danihek/Themecord/blob/main/assets/nix3.png)
 
-6. If you used pywal before, then theme should work out of the box
-   ![alt text](https://github.com/danihek/Themecord/blob/main/assets/nix4.png)
-
-4. Now you can use command ``themecord`` right after pywal,
+5. Now after you run hellwal, pywal or wallust  run ``./themecord`` and your discord theme will be applied.
 and your discord client will update it's theme.
 
 ## Nix
-In folder ``./nix`` you can see example how I added to my flake wallust and pywal.
+In folder ``./nix`` you can see example how I added to my flake hellwal, wallust and pywal templates.
 
 ## Example usage
-In folder ``./example`` you see example script which you can use as your template in your own script/config and edit to your needs. Enjoy theme'in!!
+In folder ``./example`` you see example script which you can use as your template in your own script/config for changing wallpapers and edit to your needs.
 
-# Showcase
+# Enjoy theme'in!!
+
+## Showcase
 ![alt text](./assets/swappy-20241011_013305.png)
 ![alt text](./assets/swappy-20241011_013320.png)
 ![alt text](./assets/swappy-20241011_013405.png)

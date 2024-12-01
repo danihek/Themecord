@@ -1,0 +1,169 @@
+
+    --list-item-transition: 0.2s ease;  /* channels/members/settings hover transition */
+    --icon-spin-transition: 1s ease;    /* round icon button spin (settings, emoji, etc.) */
+
+}
+
+.theme-dark {
+    --background-primary: var(--color2);
+    --background-primary-alt: var(--color3);
+
+    --background-secondary: var(--color1);
+    --background-secondary-alt: var(--color2);
+
+    --background-floating: var(--color5);
+    --background-accent-gradient: var(--color2);
+    --background-tertiary: var(--color0);
+
+    --background-mentioned: var(--color12);
+    --background-mentioned-hover: var(--color3);
+
+    --background-modifier-hover: var(--color3);
+    --background-modifier-active: var(--color12);
+    --background-modifier-accent: var(--color3); 
+    --background-modifier-selected: var(--color13);
+    
+    --scrollbar-auto-thumb: var(--color0);
+    --scrollbar-auto-thumb-hover: var(--color2);
+
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-track: var(--color5);
+
+    --scrollbar-auto-scrollbar-color-thumb: var(--color5);
+    --scrollbar-auto-scrollbar-color-track: var(--color12);
+
+    --text-link: var(--color0);
+    --text-muted: var(--color15);
+    --text-normal: var(--color15);
+    --text-positive: var(--color15);
+
+    --interactive-muted: var(--color15);
+    --interactive-active: var(--color15);
+    --interactive-normal: var(--color15);
+    --interactive-selected: var(--color15);
+    
+    --header-primary: var(--color15);
+    --channels-default: var(--color15);
+    --header-secondary: var(--color15);
+    --channeltextarea-background: var(--color14);
+}
+
+.theme-light {
+    --background-primary: var(--color13);
+    --background-primary-alt: var(--color12);
+
+    --background-secondary: var(--color14);
+    --background-secondary-alt: var(--color13);
+
+    --background-tertiary: var(--color4);
+    --background-floating: var(--color10);
+    --background-accent-gradient: var(--color6);
+
+    --background-modifier-accent: var(--color9);
+    --background-modifier-hover: var(--color15);
+    --background-modifier-active: var(--color14);
+    --background-modifier-selected: var(--color13);
+
+    --background-mentioned: var(--color10);
+    --background-mentioned-hover: var(--color10);
+
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-track: var(--color13);
+
+    --scrollbar-auto-thumb: var(--color13);
+    --scrollbar-auto-thumb-hover: var(--color7);
+
+    --scrollbar-auto-scrollbar-color-track: var(--color8);
+    --scrollbar-auto-scrollbar-color-thumb: var(--color10);
+
+    --text-link: var(--color0);
+    --text-muted: var(--color1);
+    --text-normal: var(--color1);
+    --text-positive: var(--color0);
+
+    --interactive-muted: var(--color1);
+    --interactive-active: var(--color1);
+    --interactive-normal: var(--color1);
+    --interactive-selected: var(--color1);
+    
+    --header-primary: var(--color10);
+    --header-secondary: var(--color10);
+    --channels-default: var(--color10);
+    --channeltextarea-background: var(--color14);
+}
+
+/* Animations */
+@keyframes popup {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.05) translateZ(-1px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+button:hover,
+button:focus,
+a:hover,
+a:focus,
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus,
+[role="button"]:hover,
+[role="button"]:focus,
+[role="link"]:hover,
+[role="link"]:focus,
+.button-38aScr:hover,
+.button-38aScr:focus,
+.form_a7d72e:hover,
+.form_a7d72e:focus,
+[class*="clickable"]:hover,
+[class*="clickable"]:focus,
+[class*="wrapper"]:hover,
+[class*="wrapper"]:focus {
+    animation: popup 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+/* Thanks https://github.com/refact0r for this piece of code */
+:root.reduce-motion {
+	--list-item-transition: none;
+	--icon-spin-transition: none;
+}
+.wrapper_d8bfb3 .link_d8bfb3 /* channels */,
+.container_e9f61e /* members */,
+.channel_c91bad /* dms */,
+.side_a0 .item_a0 /* settings */ {
+	transition: margin-left var(--list-item-transition);
+}
+.wrapper_d8bfb3:hover .link_d8bfb3,
+.side_a0 .item_a0:hover {
+	margin-left: 10px;
+}
+.container_e9f61e:hover,
+.channel_c91bad:hover {
+	margin-left: 18px;
+}
+
+/* spin hover animations */
+button.button_f67531 /* make user panel buttons round */ {
+	border-radius: 50%;
+}
+.attachButton_f298d4 .attachButtonInner_f298d4 /* upload button */,
+.emojiButton_d0696b .contents_dd4f85 /* emoji button */,
+.closeButton_df5532 /* settings exit button */,
+.contents_dd4f85 > .closeIcon_f9a4c9 /* modal close */ {
+	transition: transform var(--icon-spin-transition);
+}
+.button_f67531:last-child:hover .contents_dd4f85,
+.attachButton_f298d4:hover .attachButtonInner_f298d4,
+.emojiButton_d0696b:hover .contents_dd4f85,
+.closeButton_df5532:hover,
+.contents_dd4f85:hover > .closeIcon_f9a4c9 {
+	transform: rotate(360deg);
+}

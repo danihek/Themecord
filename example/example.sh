@@ -1,19 +1,25 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-# So pick wallpaper (for example this one)
+# pick some wallpaper (for example this one)
 wallpaper=./test-wallpaper.jpg
+
+# Use hellwal
+hellwal -i $wallpaper
+themecord -g # -g for hellwal - Generate Themecord.css from new color palette
+
+
 
 # Use pywal
 wal -i $wallpaper
+themecord -p # -p for pywal - Generate Themecord.css from new color palette
+
+
 
 # Use wallust
 wallust run $wallpaper
+themecord -w # -w for wallust - Generate Themecord.css from new color palette
 
-# Generate Themecord.css from new color palette (pywal)
-../scripts/themecord.sh
 
-# Generate Themecord.css from new color palette (wallust)
-#../scripts/themecord.sh -w
 
 # Use wallpaper daemon of your choice and change wallpaper
 
@@ -25,4 +31,4 @@ wallust run $wallpaper
   # X
     # feh --bg-scale $wallpaper
 
-# etc.
+# next reload your bar, wm etc. etc.

@@ -21,6 +21,6 @@ let
   '';
 in {
   home.file = {
-    ".config/wal/templates/colors-discord.css".text = ''${discord-colors}'';
+    ".config/wal/templates/discord-colors.css".text = ''${discord-colors}'';
   };
 }
