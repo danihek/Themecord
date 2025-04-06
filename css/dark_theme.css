@@ -12,7 +12,7 @@
   --bg-1: var(--color5);
   --bg-2: var(--color4);
   --bg-3: var(--color2);
-  --bg-4: var(--color0);
+  --bg-4: var(--color8);
 
   /* hover and active states, smoother for better user experience */
   --hover: color-mix(in srgb, var(--color14) 20%, transparent); 
