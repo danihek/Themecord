@@ -12,6 +12,7 @@ supportedClients=("Vencord" "vesktop")
 availableClients=()
 generatedColors="hellwal" # default option is hellwal
 colosPath=""
+themeFiller="$dark_theme"
 
 show_help() {
     echo "Usage: themecord [OPTION]"
@@ -19,6 +20,7 @@ show_help() {
     echo
     echo "Options:"
     echo "  -h            Display this message and exit"
+    echo "  -l            use light mode instead of dark mode"
     echo
     echo "Select wallpaper palette backend:"
     echo "  -g            Use hellwal"
@@ -29,11 +31,14 @@ show_help() {
     echo
 }
 
-while getopts ":hwpgf:" opt; do
+while getopts ":hlwpgf:" opt; do
     case ${opt} in
         h )
             show_help
             exit 0
+            ;;
+        l )
+            themeFiller="$light_theme"
             ;;
         w )
             generatedColors="wallust"
@@ -114,5 +119,18 @@ for client in "${availableClients[@]}"; do
     else
         print_err "Cannot access \$themecordFiller content."
     fi
+
+    if [[ -v themeFiller ]]; then
+        printf '%s\n' "$themeFiller " >> $themecordPath
+    else
+        print_err "Cannot access \$themeFiller content."
+    fi
+
+    if [[ -v themecordFiller2 ]]; then
+        printf '%s\n' "$themecordFiller2" >> $themecordPath
+    else
+        print_err "Cannot access \$themecordFiller2 content."
+    fi
+
     printf "%s\n" "$themecordBase" >> $themecordPath
 done

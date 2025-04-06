@@ -1,4 +1,5 @@
 # Themecord
+
 Discord theme that will always match your wallpaper!
 
 <img src="https://raw.githubusercontent.com/danihek/Themecord/refs/heads/main/assets/preview.gif" alt="drawing" style="width:1200px;"/>
@@ -45,7 +46,6 @@ themecord.target = '~/.cache/wallust/discord-colors.css'
 ### AUR
 ``yay -S themecord``
 
-
 ### Manual
 
 1. Install supported discord client
@@ -89,7 +89,16 @@ and your discord client will update it's theme.
 In folder ``./nix`` you can see example how I added to my flake hellwal, wallust and pywal templates.
 
 ## Example usage
+
 In folder ``./example`` you see example script which you can use as your template in your own script/config for changing wallpapers and edit to your needs.
+
+## Light mode
+
+You can use `-l` flag to use light mode like this (**hellwal** as backend ):
+
+```sh
+themecord -l
+```
 
 # Enjoy theme'in!!
 
@@ -101,3 +110,8 @@ In folder ``./example`` you see example script which you can use as your templat
 ![alt text](./assets/swappy-20241011_013439.png)
 ![alt text](./assets/swappy-20241011_013456.png)
 ![alt text](./assets/swappy-20241011_013514.png)
+
+## Special thanks
+
+- [dylanaraps](https://github.com/dylanaraps) for creating pywal and inspiration for other programmers
+- [refact0r](https://github.com/refact0r) for fixing miserable discord update and providing pretty and well-built discord theme

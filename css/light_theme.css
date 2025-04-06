@@ -1,0 +1,76 @@
+:root {
+  /* text colors */
+  --text-0: var(--color1);
+  --text-1: var(--color5);
+  --text-2: var(--color3);
+  --text-3: var(--color2);
+  --text-4: var(--color1);
+  --text-5: var(--color0);
+
+  /* background */
+  --bg-1: var(--color9);
+  --bg-2: var(--color8);
+  --bg-3: var(--color7);
+  --bg-4: var(--color6);
+  --hover: color-mix(in srgb, var(--color4) 15%, transparent);
+  --active: color-mix(in srgb, var(--color4) 25%, transparent);
+  --active-2: color-mix(in srgb, var(--color4) 35%, transparent);
+  --message-hover: color-mix(in srgb, black 10%, transparent);
+
+  --red-1: color-mix(in srgb, #fff 40%, var(--color6)); 
+  --red-2: color-mix(in srgb, #ff4d4d 85%, transparent); 
+  --red-3: color-mix(in srgb, #ff4d4d 70%, var(--color10));
+  --red-4: color-mix(in srgb, #ff4d4d 55%, var(--color10));
+  --red-5: color-mix(in srgb, #ff4d4d 40%, var(--color10));
+
+  --green-1: color-mix(in srgb, #b2f2bb 80%, var(--color1));
+  --green-2: color-mix(in srgb, #70e09c 80%, var(--color2));
+  --green-3: color-mix(in srgb, #43a25a 80%, var(--color3));
+  --green-4: color-mix(in srgb, #33834a 80%, var(--color4));
+  --green-5: color-mix(in srgb, #2c6d3e 80%, var(--color5));
+
+  --blue-1: var(--color2);
+  --blue-2: var(--color3);
+  --blue-3: var(--color4);
+  --blue-4: var(--color5);
+  --blue-5: var(--color6);
+
+  --yellow-1: color-mix(in srgb, #ffe29a 100%, var(--color2));
+  --yellow-2: color-mix(in srgb, #ffd166 80%, var(--color3));
+  --yellow-3: color-mix(in srgb, #e6b34f 80%, var(--color4));
+  --yellow-4: color-mix(in srgb, #ca9654 80%, var(--color5));
+  --yellow-5: color-mix(in srgb, #a57433 80%, var(--color6));
+
+  --purple-1: color-mix(in srgb, #d3b3ff 100%, var(--color2));
+  --purple-2: color-mix(in srgb, #b47aff 80%, var(--color3));
+  --purple-3: color-mix(in srgb, #8c4dff 80%, var(--color4));
+  --purple-4: color-mix(in srgb, #6a36d9 80%, var(--color5));
+  --purple-5: color-mix(in srgb, #593695 80%, var(--color6));
+
+  /* status indicator colors */
+  --online: var(--green-2);
+  --dnd: var(--red-2);
+  --idle: var(--yellow-2);
+  --streaming: var(--purple-2);
+  --offline: var(--text-4);
+
+  /* border colors */
+  --border-light: color-mix(in srgb, var(--color3) 20%, transparent);
+  --border: color-mix(in srgb, var(--color3) 30%, transparent);
+  --button-border: color-mix(in srgb, var(--color0) 15%, transparent);
+
+  /* accent colors */
+  --accent-1: var(--blue-1);
+  --accent-2: var(--blue-2);
+  --accent-3: var(--blue-3);
+  --accent-4: var(--blue-4);
+  --accent-5: var(--blue-5);
+  --accent-new: var(--blue-2);
+
+  /* gradients */
+  --mention: linear-gradient(to right, color-mix(in srgb, var(--blue-2) 20%, transparent) 40%, transparent);
+  --mention-hover: linear-gradient(to right, color-mix(in srgb, var(--blue-2) 15%, transparent) 40%, transparent);
+  --reply: linear-gradient(to right, color-mix(in srgb, var(--text-3) 20%, transparent) 40%, transparent);
+  --reply-hover: linear-gradient(to right, color-mix(in srgb, var(--text-3) 15%, transparent) 40%, transparent);
+}
+
