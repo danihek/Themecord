@@ -8,7 +8,7 @@
 # TO PROPERLY APPLY COLORS!
 
 confPath="/home/$USER/.config"
-supportedClients=("Vencord" "vesktop")
+supportedClients=("Vencord" "vesktop" "Equicord" "equibop")
 availableClients=()
 generatedColors="hellwal" # default option is hellwal
 colosPath=""

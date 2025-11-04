@@ -27,6 +27,8 @@ Because why not, I like having same theme on everything I thought it's cool.
 ## Supported Clients:
 - Vencord
 - Vesktop
+- Equicord
+- Equibop
 
 ## Installation
 
